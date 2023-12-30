@@ -1,0 +1,125 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #ecf0f3;
+	font-family: sans-serif;
+	outline: none;
+}
+h1{
+	color: white;
+	padding: 10px;
+	text-shadow: 1px 2px 2px black;
+}
+.container{
+	/* height: 100vh; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.calculator{
+	background-color: #ecf0f3;
+	padding: 20px;
+	border-radius: 30px;
+	box-shadow: inset 5px 5px 12px #ffffff,
+					  5px 5px 12px rgba(0,0,0,.16);
+	display: grid;
+	grid-template-columns: repeat(4, 68px);	
+	border: none;
+}
+input
+{
+	grid-column: span 4;
+	height: 60px;
+	width: 100%;
+	border-radius: 40px;
+	text-align: right;
+	font-size: 45px;font-family: sans-serif;
+	box-shadow: inset -5px -5px 12px #ffffff,
+				inset 5px 5px 12px rgba(0, 0, 0, .16) ;
+	border: none;
+	background-color: #ecf0f3;
+	padding: 20px;
+
+
+}
+button
+{	height: 50px;
+	width: 50px;
+	border-radius: 70px;
+	margin: 5px;
+	border: none;
+	box-shadow: -5px -5px 12px #ffffff,5px 5px 12px rgba(0, 0, 0, .16);
+}
+button:hover{
+	box-shadow: 1px 1px 12px #669be0;
+}
+.equal{
+	width: 90px;
+	height: 50px;
+	margin: 10px;
+	margin-left:100px ;
+	box-shadow: -5px -5px 12px #ffffff,5px 5px 12px rgba(0, 0, 0, .16);
+}
+.zero{
+	margin-left: 105px;
+}
+@media screen and (max-width:480px) {
+	h1{
+		color: white;
+		padding: 5px;
+		text-shadow: 1px 2px 2px black;
+	}
+	.container{
+		/* height: 100vh; */
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.calculator{
+		background-color: #ecf0f3;
+		padding: 10px;
+		border-radius: 15px;
+		box-shadow: inset 5px 5px 12px #ffffff,
+						  5px 5px 12px rgba(0,0,0,.16);
+		display: grid;
+		grid-template-columns: repeat(4, 68px);	
+		border: none;
+	}
+	input
+	{
+		grid-column: span 4;
+		height: 30px;
+		width: 100%;
+		border-radius: 20;
+		text-align: right;
+		font-size: 22px;font-family: sans-serif;
+		box-shadow: inset -5px -5px 12px #ffffff,
+					inset 5px 5px 12px rgba(0, 0, 0, .16) ;
+		border: none;
+		background-color: #ecf0f3;
+		padding: 20px;
+	
+	
+	}
+	button
+	{	height: 50px;
+		width: 50px;
+		border-radius: 70px;
+		margin: 5px;
+		border: none;
+		box-shadow: -5px -5px 12px #ffffff,5px 5px 12px rgba(0, 0, 0, .16);
+	}
+	.equal{
+		width: 90px;
+		height: 50px;
+		margin: 10px;
+		margin-left:100px ;
+		box-shadow: -5px -5px 12px #ffffff,5px 5px 12px rgba(0, 0, 0, .16);
+	}
+	.zero{
+		margin-left: 105px;
+	}
+}
